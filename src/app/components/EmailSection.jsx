@@ -3,6 +3,10 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import InstagramIcon from "../../../public/instagram-icon.png";
+import FacebookOutlinedIcon from "../../../public/facebook-outlined-icon.png";
+import FacebookMessengerIcon from "../../../public/facebook-messenger-icon.png";
+
 import Link from "next/link";
 import Image from "next/image";
 import { init, send } from "emailjs-com";  // Import EmailJS SDK
@@ -58,6 +62,15 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
+          <div className="pt-1 w-10 h-12"> <Link href="https://facebook.com/mrHeinrichh/">
+            <Image src={FacebookMessengerIcon} alt="Facebook Messenger" />
+          </Link></div>
+          <div className="pt-0.5 w-11 h-12"> <Link href="https://facebook.com/mrHeinrichhh/">
+            <Image src={FacebookOutlinedIcon} alt="Facebook Icon" />
+          </Link></div>
+          <div className="pt-0.5 w-11 h-12"> <Link href="https://www.instagram.com/mrheinrichhh/">
+            <Image src={InstagramIcon} alt="Instagram Icon" />
+          </Link></div>
           <Link href="https://github.com/mrHeinrichh">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
